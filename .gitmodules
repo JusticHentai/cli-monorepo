@@ -1,0 +1,4 @@
+[submodule "packages/cli"]
+	path = packages/cli
+	url = git@github.com:JusticHentai/cli.git
+	branch = main
