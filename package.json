@@ -1,0 +1,25 @@
+{
+  "name": "@justichentai/cli-monorepo",
+  "version": "1.0.0",
+  "description": "cli 和为 cli 服务的工具链",
+  "keywords": [
+    "justichentai",
+    "monorepo",
+    "cli"
+  ],
+  "license": "ISC",
+  "author": "justichentai",
+  "scripts": {
+    "dev": "pnpm run -F @justichentai/utils-debug dev",
+    "format": "pnpm lint:prettier && pnpm lint:eslint",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "@justichentai/eslint-config": "^1.0.2",
+    "@justichentai/prettier-config": "^1.0.1",
+    "eslint": "^8.21.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}
