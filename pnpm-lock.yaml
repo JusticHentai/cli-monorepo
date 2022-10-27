@@ -18,6 +18,8 @@ importers:
 
   packages/cli:
     specifiers:
+      '@justichentai/is': ^1.0.6
+      '@justichentai/types-utils': ^1.0.0
       '@types/clear': ^0.1.2
       '@types/fs-extra': ^9.0.13
       '@types/inquirer': ^8.2.1
@@ -41,6 +43,7 @@ importers:
       tsup: ^6.2.1
       typescript: ^4.8.4
     dependencies:
+      '@justichentai/is': 1.0.6
       adm-zip: 0.5.9
       chalk: 4.1.2
       clear: 0.1.0
@@ -56,6 +59,7 @@ importers:
       ora: 5.4.1
       superagent: 7.1.5
     devDependencies:
+      '@justichentai/types-utils': 1.0.0
       '@types/clear': 0.1.2
       '@types/fs-extra': 9.0.13
       '@types/inquirer': 8.2.4
@@ -188,6 +192,10 @@ packages:
       - typescript
     dev: true
 
+  /@justichentai/is/1.0.6:
+    resolution: {integrity: sha512-zVkgNwfp72wYnOhOI9eL9x/84QBmdVDjhMMnPiQuOQOmatqJRsgNUXNPfq87V3OoXpGzCdkfW1TyyTRB5vJbxw==}
+    dev: false
+
   /@justichentai/prettier-config/1.0.1_dmjzcauo3cshxeipj7bv64ktgm:
     resolution: {integrity: sha512-R96C0cj1rTIRih9Qutdy5bgl3SZUl3scho9UsUR8nVhgnFOfhGQ1RhdpmJQHbSr3Sikn3fc0XfFST+19Qvw91g==}
     dependencies:
@@ -197,6 +205,12 @@ packages:
     transitivePeerDependencies:
       - prettier
       - typescript
+    dev: true
+
+  /@justichentai/types-utils/1.0.0:
+    resolution: {integrity: sha512-no92JCG6njr6TXLYJ95HIVYOrX0FRA/d5sLUwaoHo5GkF8SMRg53t+U0YNj/1neNLYVYgDtNPKbgcbcjFYlg6w==}
+    dependencies:
+      typescript: 4.8.4
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
